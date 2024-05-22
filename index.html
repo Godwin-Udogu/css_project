@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORBIT THE EARTH</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="https://kit.fontawesome.com/f9ab89a880.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!--  adiditional header meta tags -->
+  </head>
+  <body>
+    <header>
+          <nav>
+            <div class="logo-1">
+              <div class="icon-1">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <h1>A-SPACE</h1>
+            </div>
+
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href=""><ion-icon name="close"></ion-icon></a></li>
+              <li>
+              <a href="#">About</a>
+              </li>
+
+              <li>
+                <a href="#">Technology</a>
+              </li>
+              <li>
+                <a href="#">Galaxy</a>
+              </li>
+              
+              <li><a href="">Satellite</a></li>
+
+              <li><a href="../html/Sign_in.html">sign in</a></li>
+
+            </ul>
+
+            <ul class="navlinks">
+              <li class="hideOnMobile">
+              <a href="#">About</a>
+              </li>
+
+              <li class="hideOnMobile">
+                <a href="#">Technology</a>
+              </li>
+              <li class="hideOnMobile">
+                <a href="#">Galaxy</a>
+              </li>
+              
+              <li class="hideOnMobile"><a href="">Satellite</a></li>
+
+              <li class="hideOnMobile"><a class="btn-1" href="../html/Sign_in.html">sign in</a></li> 
+
+              <li class="menu-button" onclick=showSidebar()><ion-icon name="menu"></ion-icon></li>
+            </ul>
+          </nav>
+
+    </header>
+
+     <main>
+      <section class="section-1" > 
+      <div  class="section-d2">
+        <h1>
+          ORBIT THE
+          <br>
+          EARTH          
+        </h1><br>
+        <p>
+          Reporting from the NASA page, a satellite is an 
+          object that orbits or surrounds another object in 
+          space. There are two different types of satellites,
+          namely natural and artificial satellites.As quoted by
+          Science Learn,according to Dr. Allan Mcinnes, a
+          satellite is anything that orbits around a larger 
+          object.          
+        </p>
+        
+        <br>
+
+        <a  href="#">
+          <button class="btn">
+          GetStarted
+        </button>          
+        </a>
+      </div>
+      </section>
+
+    <section class="section-2">
+      <div class="box1">
+        <img  class="atom" src="/cyberwave/asset/img/picsvg_download.svg"  alt="">
+        <p>LEO</p>
+        <h2 >300-1500 KM</h2>
+        <h4> Low Earth Orbit</h4>
+      </div>
+
+      <div class=" box2">
+        <img class="satellite" src="/cyberwave/asset/img/kAKEfq01.svg" alt="">
+        <p>H-SPEED</p>
+        <h2>22-235 ML</h2>
+        <h4>Oribit Geostastioner</h4>
+      </div>
+
+      <div class="box3">
+        <img  class="img-earth" src="/cyberwave/asset/img/Ksx6Th01.svg" alt="">
+        <p>EARTH</p>
+        <h2>365 DAY</h2>
+        <h4>Oribit periode</h4>
+    </div>
+    </section>
+
+    <section class="section-3">
+      <div class="section-3-d">
+        <div class="text-2">
+        <h5>- OUR MISSION</h5> 
+          <h1>RAPIDSCAT</h1>
+          <p> 
+            Improve weather forecasting on Earth, provide cross-calibration for all international satellites that monitor ocean winds, and improve estimates of how ocean winds change throughout the day, around the globe.
+          </p><br>
+          <a href=""><button class="btn2"> VIEW ALL</button></a>
+        </div>
+        <img src="../img/WhatsApp Image123 2024-04-16 at 09.20.06.jpeg.jpg" alt="Project1">
+        </div>
+      </section>
+     </main>
+    
+     <aside>
+      <section class="section-4">
+      <div class="section-4-d">
+        <img src="../img/satellite.jpg" alt="">
+        <div class="text-2">
+        <h5>- FUNCTION </h5> 
+          <h1>SATELLITE</h1>
+          <p> 
+            Gives light at night. Affects the balance of sea water. Transmit television signals, cell phones, and the internet. Transmits and receives communication signals.
+          </p><br>
+          <a href=""><button class="btn2"> VIEW ALL</button></a> 
+        </div>
+      </div>
+      </section>
+     </aside>
+
+     <footer> <section class="section-5">
+      <ul class="footer">
+          <li>
+              Technology
+          </li>
+          <li >
+              Created by GOWIN UDOGU
+          </li>
+          <li >
+              Web Design @2024
+          </li>
+          <li>
+              Supported by
+          </li>
+          
+      </ul> 
+      <div class="logo-2">
+        <div class="icon-2">
+          <i class="fa-solid fa-earth-americas"></i>
+      </div>
+        <h1>A-SPACE</h1>
+      </div>
+    
+  </section>
+</footer>
+          <script>
+
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display ='flex'
+            }
+
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+
+            
+            // function showSidebar(){
+            //   const sidebar = document.querySelector('.sidebar')
+                
+            //   console.log('sidebar.style.display', sidebar.style.display )
+            //   if(sidebar.style.display === 'none'){
+            //     sidebar.style.display ='flex'
+
+            //   }
+            //   else{
+            //     sidebar.style.display ='none'
+
+            //   }
+            // }
+
+          </script>
+      </div>
+  </body>
+</html>

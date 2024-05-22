@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <div id="middle">
+            <div id="inner">Click Me!</div>
+    </div>
+</div>
+
+<!-- <script>
+    // Event Capturing
+    document.getElementById("outer").addEventListener("click",
+        function(event) {
+            console.log("Outer Clicked");
+        }, true); //true for capturing
+
+        document.getElementById("middle").addEventListener("click",
+        function(event) {
+            // event.stopPropagation
+            console.log("Middle Clicked");
+        }, true); //true for capturing
+
+        document.getElementById("inner").addEventListener("click",
+        function(event) {
+            console.log("Inner Clicked");
+        });
+</script> -->
+
+<script>
+    // Event Bubbling
+    document.getElementById("outer").addEventListener("click",
+        function() {
+            console.log("Outer Clicked");
+        }, false); //true for capturing
+
+     document.getElementById("middle").addEventListener("click",
+        function() {
+            console.log("Middle Clicked");
+        }, false); //true for capturing
+
+    document.getElementById("inner").addEventListener("click",
+        function() {
+            console.log("Inner Clicked");
+        });
+</script>
+</body>
+</html>

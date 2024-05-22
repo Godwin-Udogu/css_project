@@ -1,0 +1,401 @@
+/* HEADER */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+}
+
+header nav{
+    height: 100%;
+    margin: 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-1 h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(196, 192, 192);
+    margin-left:12px ;
+}
+
+.icon-1 {
+    color: rgb(196, 192, 192);
+    font-size: 60px;
+}
+
+header nav .navlinks{
+    display: flex;
+    align-items: center;
+}
+
+header .navlinks li{
+    list-style: none;
+}
+
+header .navlinks a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(243, 238, 238);
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+header .navlinks a:hover{
+    color: rgb(97, 97, 184);
+}
+
+.navlinks a .btn-1 {
+    color: blue ;
+    border: 1px solid white ;
+}
+
+ion-icon{
+    font-size: 30px;
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 200vh;
+    width: 250px;
+    z-index:10;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 3px 3px 5px rgb(207, 0, 0, 0.1);
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sidebar li{
+    width: 100%;
+    list-style:none;
+    padding: 12px;
+}
+
+.sidebar a{
+ color: white;
+}
+
+.sidebar li:hover{
+    color: rgb(88, 88, 185);
+    background-color: black;
+    padding: 12px;
+    border-radius:12px;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media (max-width:840px){
+    .hideOnMobile{
+        display:none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.btn-1{
+    border: 1px solid white;
+}
+
+.btn-1:hover{
+ background-color:rgb(9, 4, 28) ;
+}
+
+/* MAIN */
+
+body{
+    
+    height:auto;
+    width: 100%;
+    background-image: url(../img/WhatsApp\ Image\ 2024-04-19\ at\ 13.46.24_f6bec666.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin-top: 300px;
+}
+
+
+.section-d2{
+ margin-left:50px ;
+ max-width: 900px;
+}
+
+h1{
+    color: white;
+}
+
+.section-d2 h1{
+    font-size: 45px;
+    font-weight: 450;
+}
+
+p{
+    color: white;
+}
+
+.section-d2 p{
+    font-size: 25px;
+}
+
+.btn{
+    background-color: rgb(46, 84, 165);
+    color: white;
+    padding: 13px;
+    border: none ;
+    border-radius: 3px;
+}
+
+.section-2{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box1{
+    text-align: center;
+    width: 256px;
+    background-color:  rgb(38, 92, 209);;
+    margin: 60px;
+    padding: 10px;
+    color: white;
+}
+
+.box1 p{
+    font-size: 25px;
+}
+
+.atom{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.box2{
+    text-align: center;
+    width: 256px;
+    background-color:  rgb(38, 92, 209);;
+    margin: 60px;
+    padding: 10px;
+    color: white;
+}
+
+.box1 p{
+    font-size: 22px;
+}
+
+.satellite{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+.box3{
+    text-align: center;
+    width: 256px;
+    background-color: rgb(38, 92, 209);;
+    margin: 60px;
+    padding: 10px;
+    color: white;
+}
+
+.box1 p{
+    font-size: 25px;
+}
+
+.img-earth{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.section-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.section-3-d{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap-reverse;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 12px;
+    border-right: 5px solid rgb(51, 51, 153);
+    border-bottom: 1px solid rgb(51, 51, 153);
+}
+
+.section-3-d .text-2{
+    margin: 12px;
+    flex-basis: 500px;
+    flex-grow: 2;
+}
+
+.section-3-d button{
+    background-color: rgb(46, 84, 165);
+    color: white;
+    padding: 13px;
+    border: none ;
+    border-radius: 3px;
+}
+
+.section-3 img{
+    width: 100%;
+    max-width: 383px;
+}
+
+.section-3 img{
+    width: 100%;
+    max-width: 383px;
+}
+
+.section-3-d h5{
+    color: rgb(38, 92, 209);
+}
+
+/* ASIDE */
+
+.section-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 50px;
+    border-left: 6px;
+    border-bottom: 2px;
+}
+
+.section-4-d{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 12px;
+    border-left: 5px solid rgb(51, 51, 153);
+    border-bottom: 1px solid rgb(51, 51, 153);
+}
+
+.section-4-d .text-2{
+    margin: 12px;
+    flex-basis: 500px;
+    flex-grow: 2;
+}
+
+.section-4-d button{
+        background-color: rgb(46, 84, 165);
+        color: white;
+        padding: 13px;
+        border: none ;
+        border-radius: 3px;
+}
+
+.section-4-d h5{
+    color: rgb(38, 92, 209);
+}
+
+.section-4 img{
+    width: 100%;
+    max-width: 383px;
+}
+
+/* FOOTER */
+.section-5{
+    margin: 3px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-grow:1;
+    flex-wrap: wrap;
+    max-width: 800px;
+    list-style: none;
+    color:  rgb(186, 182, 182);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-2 h1{
+    font-weight: 600;
+    font-size: 30px;
+    color:  rgb(186, 182, 182);
+}
+
+.icon-2 {
+    color: rgb(186, 182, 182);
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+@media(max-width:857px){
+    .logo-2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-2 h1{
+        font-weight: 600;
+        font-size: 16px;
+        width: 70px;
+    }
+    
+    .icon-2 {
+        color:  rgb(186, 182, 182);
+        font-size: 30px;
+    }
+
+}
